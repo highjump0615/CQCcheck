@@ -7,3 +7,4 @@
 
 * 采用腾讯定位SDK实现定位功能
 * 跟后台通讯是用android-async-http
+* 采用sqlite3为内部数据库
