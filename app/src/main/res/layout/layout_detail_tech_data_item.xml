@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item_color">
+
+    <TextView
+        android:id="@+id/text_no"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="36"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/text_product_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="163"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="PORTABLE STEAM SAUNA" />
+
+    <TextView
+        android:id="@+id/text_number_sampling"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="125"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/text_electric_strength"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="152"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="1250V/10mA/60S" />
+
+    <TextView
+        android:id="@+id/text_earth_resist"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="120"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="&lt; 0.1W/25A" />
+
+    <TextView
+        android:id="@+id/text_leak_cur"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="105"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="0.02 mA" />
+
+</LinearLayout>

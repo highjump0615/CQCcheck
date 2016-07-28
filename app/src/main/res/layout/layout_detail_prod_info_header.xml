@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/detail_cell_grey_back">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="51"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="序号\nNo." />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="225"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="产品名称\nProduct Name" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="91"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="数量\nQuantity" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="171"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="规格型号\nProduct Description" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="164"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="包装方式\nPackage Manner" />
+
+</LinearLayout>

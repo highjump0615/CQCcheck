@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/layout_horizontal_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="@dimen/detail_cell_min_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/detail_key_cell_width"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/detail_cell_padding"
+            android:background="@color/detail_cell_grey_back"
+            android:text="申请人\nApplicant" />
+
+        <TextView
+            android:id="@+id/text_applicant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/detail_cell_padding"
+            android:text="安徽桑乐金股份有限公司\nAN HUI SAUNAKING CO.,LTD" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="@dimen/detail_cell_min_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/detail_key_cell_width"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/detail_cell_padding"
+            android:background="@color/detail_cell_grey_back"
+            android:text="地址\nAddress" />
+
+        <TextView
+            android:id="@+id/text_applicant_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/detail_cell_padding"
+            android:text="安徽省合肥市高新技术开发区合欢路34\nNo.34 Hehuan Road High-Tech Development Zone,Hefei China" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="@dimen/detail_cell_min_height1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/detail_key_cell_width"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/detail_cell_padding"
+            android:background="@color/detail_cell_grey_back"
+            android:text="Tel./E-MAIL" />
+
+        <TextView
+            android:id="@+id/text_applicant_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/detail_cell_padding"
+            android:text="TEL(电话) : 0551-2355464\nE-mail(电子邮件)：chensx@saunaking.com.cn" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="@dimen/detail_cell_min_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/detail_key_cell_width"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/detail_cell_padding"
+            android:background="@color/detail_cell_grey_back"
+            android:text="制造商\nManufacturer" />
+
+        <TextView
+            android:id="@+id/text_manufacturer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/detail_cell_padding"
+            android:text="安徽桑乐金股份有限公司\nAN HUI SAUNAKING CO.,LTD" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="@dimen/detail_cell_min_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/detail_key_cell_width"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/detail_cell_padding"
+            android:background="@color/detail_cell_grey_back"
+            android:text="地址\nAddress" />
+
+        <TextView
+            android:id="@+id/text_manufacturer_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/detail_cell_padding"
+            android:text="安徽省合肥市高新技术开发区合欢路34\nNo.34 Hehuan Road High-Tech Development Zone,Hefei China" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="@dimen/detail_cell_min_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/detail_key_cell_width"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/detail_cell_padding"
+            android:background="@color/detail_cell_grey_back"
+            android:text="生产厂\nFactory" />
+
+        <TextView
+            android:id="@+id/text_factory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/detail_cell_padding"
+            android:text="安徽桑乐金股份有限公司\nAN HUI SAUNAKING CO.,LTD" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="@dimen/detail_cell_min_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/detail_key_cell_width"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/detail_cell_padding"
+            android:background="@color/detail_cell_grey_back"
+            android:text="地址\nAddress" />
+
+        <TextView
+            android:id="@+id/text_factory_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/detail_cell_padding"
+            android:text="安徽省合肥市高新技术开发区合欢路34\nNo.34 Hehuan Road High-Tech Development Zone,Hefei China" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="@dimen/detail_cell_min_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/detail_key_cell_width"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/detail_cell_padding"
+            android:background="@color/detail_cell_grey_back"
+            android:text="出口商\nExporter" />
+
+        <TextView
+            android:id="@+id/text_exporter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/detail_cell_padding"
+            android:text="安徽桑乐金股份有限公司\nAN HUI SAUNAKING CO.,LTD" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="@dimen/detail_cell_min_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/detail_key_cell_width"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/detail_cell_padding"
+            android:background="@color/detail_cell_grey_back"
+            android:text="地址\nAddress" />
+
+        <TextView
+            android:id="@+id/text_exporter_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/detail_cell_padding"
+            android:text="安徽省合肥市高新技术开发区合欢路34\nNo.34 Hehuan Road High-Tech Development Zone,Hefei China" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="@dimen/detail_cell_min_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/detail_key_cell_width"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/detail_cell_padding"
+            android:background="@color/detail_cell_grey_back"
+            android:text="进口商\nImporter" />
+
+        <TextView
+            android:id="@+id/text_importer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/detail_cell_padding"
+            android:text="DAR VERSAILLES TRADING EST." />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="@dimen/detail_cell_min_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/detail_key_cell_width"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/detail_cell_padding"
+            android:background="@color/detail_cell_grey_back"
+            android:text="地址\nAddress" />
+
+        <TextView
+            android:id="@+id/text_importer_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/detail_cell_padding"
+            android:text="OLAYA ST-AQARIA PLAZA CENTER, 1ST FLOOR, OFFICE NO. 128, P.O. BOX 7309,RIYADH 11462,K.S.A" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="@dimen/detail_cell_min_height3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/detail_key_cell_width"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/detail_cell_padding"
+            android:background="@color/detail_cell_grey_back"
+            android:text="商业发票号\nCommercial invoice No." />
+
+        <TextView
+            android:id="@+id/text_commercial_invoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/detail_cell_padding"
+            android:text="HN14118S037" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_horizontal_line" />
+
+    <!-- 附件 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/detail_title_margin_top"
+        android:layout_marginLeft="@dimen/detail_title_margin"
+        android:paddingBottom="@dimen/detail_title_margin_bottom"
+        android:text="附件"/>
+
+    <include layout="@layout/layout_horizontal_line" />
+
+    <include layout="@layout/layout_detail_attach_header" />
+    <LinearLayout
+        android:id="@+id/layout_attach_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </LinearLayout>
+    <include layout="@layout/layout_horizontal_line" />
+
+
+</LinearLayout>

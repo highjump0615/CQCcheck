@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_root">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusableInTouchMode="true"
+        android:focusable="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_navbar"
+        android:layout_above="@+id/layout_bottombar"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="核查时间"
+                android:textSize="@dimen/main_title_bar_font_size"
+                android:textColor="@color/report_item_text"/>
+
+            <EditText
+                android:id="@+id/edit_verify_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/detail_edit_padding"
+                android:text=""
+                android:layout_marginLeft="@dimen/location_left_margin"
+                android:textSize="@dimen/main_title_bar_font_size"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/location_top_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="核查地点"
+                android:textSize="@dimen/main_title_bar_font_size"
+                android:textColor="@color/report_item_text"/>
+
+            <EditText
+                android:id="@+id/edit_verify_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/detail_edit_padding"
+                android:text=""
+                android:layout_marginLeft="@dimen/location_left_margin"
+                android:textSize="@dimen/main_title_bar_font_size"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/location_top_margin"
+            android:layout_marginBottom="@dimen/location_top_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="现场位置"
+                android:textSize="@dimen/main_title_bar_font_size"
+                android:textColor="@color/report_item_text"/>
+
+            <TextView
+                android:id="@+id/txt_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="[116.40, 39.90]"
+                android:textSize="@dimen/main_title_bar_font_size"
+                android:textColor="@color/report_item_state_text"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/location_top_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="现场照片"
+                android:textSize="@dimen/main_title_bar_font_size"
+                android:textColor="@color/report_item_text"/>
+
+            <ImageView
+                android:id="@+id/imgview_place"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/location_top_margin"
+                android:scaleType="fitCenter"
+                android:src="@drawable/product_img_default"
+                android:background="@android:color/darker_gray"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_navbar" />
+
+    <include layout="@layout/layout_menu"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_bottombar"
+        style="@style/BottomBarStyle" >
+
+        <Button
+            android:id="@+id/but_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/bottom_bar_button_margin_vertical"
+            android:layout_marginBottom="@dimen/bottom_bar_button_margin_vertical"
+            android:layout_marginLeft="@dimen/bottom_bar_button_margin_horizontal"
+            android:layout_marginRight="@dimen/bottom_bar_button_margin_horizontal"
+            android:paddingLeft="@dimen/bottom_bar_button_padding"
+            android:paddingRight="@dimen/bottom_bar_button_padding"
+            android:background="@drawable/but_bottom_bar_bg"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/bottom_bar_button_text_size"
+            android:text="保存"/>
+
+        <Button
+            android:id="@+id/but_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/bottom_bar_button_margin_vertical"
+            android:layout_marginBottom="@dimen/bottom_bar_button_margin_vertical"
+            android:layout_marginLeft="@dimen/bottom_bar_button_margin_horizontal"
+            android:layout_marginRight="@dimen/bottom_bar_button_margin_horizontal"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/bottom_bar_button_padding"
+            android:paddingRight="@dimen/bottom_bar_button_padding"
+            android:background="@drawable/but_bottom_bar_bg"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/bottom_bar_button_text_size"
+            android:drawablePadding="@dimen/bottom_bar_button_drawable_padding"
+            android:drawableStart="@drawable/bottom_bar_camera"
+            android:text="采集现场照片"/>
+
+        <Button
+            android:id="@+id/but_location"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/bottom_bar_button_margin_vertical"
+            android:layout_marginBottom="@dimen/bottom_bar_button_margin_vertical"
+            android:layout_marginLeft="@dimen/bottom_bar_button_margin_horizontal"
+            android:layout_marginRight="@dimen/bottom_bar_button_margin_horizontal"
+            android:layout_toLeftOf="@+id/but_camera"
+            android:paddingLeft="@dimen/bottom_bar_button_padding"
+            android:paddingRight="@dimen/bottom_bar_button_padding"
+            android:background="@drawable/but_bottom_bar_bg"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/bottom_bar_button_text_size"
+            android:drawablePadding="@dimen/bottom_bar_button_drawable_padding"
+            android:drawableStart="@drawable/bottom_bar_location"
+            android:text="采集现场位置"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

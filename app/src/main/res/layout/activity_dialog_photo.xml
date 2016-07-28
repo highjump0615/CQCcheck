@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusableInTouchMode="true"
+        android:focusable="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dialog_padding_vertical"
+        android:paddingBottom="@dimen/dialog_padding_vertical"
+        android:paddingLeft="@dimen/dialog_padding_horizontal"
+        android:paddingRight="@dimen/dialog_padding_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="拍照"
+                android:gravity="center"
+                android:textSize="@dimen/dialog_title_text_size"/>
+
+            <ImageView
+                android:id="@+id/imgview_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dialog_item_margin"
+                android:layout_gravity="center"
+                android:maxHeight="500dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/product_img_default"
+                android:background="#dddddd"/>
+
+            <EditText
+                android:id="@+id/edit_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dialog_item_margin"
+                android:hint="照片说明"
+                android:inputType="text"/>
+
+            <include layout="@layout/layout_dialog_button" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

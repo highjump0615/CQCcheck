@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_navbar"
+    android:layout_width="match_parent"
+    android:layout_height="82dp"
+    android:background="#0082cc">
+
+    <TextView
+        android:id="@+id/text_page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="核查报告"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:shadowColor="@color/TransparentGrey"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="0.01"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:text="现场核查数据采集系统"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:shadowColor="@color/TransparentGrey"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="0.01"/>
+
+    <ImageView
+        android:id="@+id/imgview_menu"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:paddingTop="28dp"
+        android:paddingBottom="28dp"
+        android:src="@drawable/but_nav_menu"/>
+
+</RelativeLayout>

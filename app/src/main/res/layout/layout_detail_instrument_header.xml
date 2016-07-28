@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/detail_cell_grey_back">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="187"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="测试设备\nInstruments" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="125"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="型号规格\nModel" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="112"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="仪器编号\nRef. No." />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="280"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="校准有效期至\nValidity Calibration until" />
+
+</LinearLayout>

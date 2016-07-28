@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/report_item_padding_vertical"
+    android:paddingTop="@dimen/report_item_padding_vertical" >
+
+    <TextView
+        android:id="@+id/text_no"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="11"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/report_item_text_size"
+        android:textColor="@color/report_item_text"
+        android:text="01" />
+
+    <TextView
+        android:id="@+id/text_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="19"
+        android:layout_gravity="center"
+        android:paddingRight="@dimen/report_item_padding_horizontal"
+        android:gravity="center"
+        android:textSize="@dimen/report_item_text_size"
+        android:textColor="@color/report_item_text"
+        android:text="968547589" />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/report_item_text_size"
+        android:textColor="@color/report_item_text"
+        android:text="2014.05.10上海浦东新区航头镇大麦湾工业园"/>
+
+    <TextView
+        android:id="@+id/text_state"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="17"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/report_item_text_size"
+        android:textColor="@color/report_item_state_text"
+        android:text="计划核查"/>
+
+</LinearLayout>

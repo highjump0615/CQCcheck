@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/detail_cell_grey_back">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="90"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="包装型式\nType Of packaging" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="126"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="尺寸\nDimension(cm)\nL x W x H" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="239"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="@dimen/detail_cell_padding_small"
+            android:paddingBottom="@dimen/detail_cell_padding_small"
+            android:text="礼品箱 Gift Box" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="131"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="@dimen/detail_cell_padding_small"
+                android:paddingBottom="@dimen/detail_cell_padding_small"
+                android:text="厚度\nThickness (mm)" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="108"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="@dimen/detail_cell_padding_small"
+                android:paddingBottom="@dimen/detail_cell_padding_small"
+                android:text="层数\nNo of layers" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="118"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="颜色\nPrinting color" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="102"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="密封方式\nType of sealing" />
+
+</LinearLayout>

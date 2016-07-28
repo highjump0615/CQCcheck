@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CQC</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- menu items -->
+    <string name="menu_report">核查报告</string>
+    <string name="menu_task">核查任务</string>
+    <string name="menu_location">现场定位</string>
+    <string name="menu_operation">操作记录</string>
+    <string name="menu_detail">报告详情</string>
+    <string name="menu_setparam">参数设置</string>
+
+</resources>

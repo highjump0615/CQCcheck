@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- login activity -->
+    <color name="login_separator">#daedf7</color>
+
+    <!-- navigation bar -->
+    <color name="nav_menu_separator">#e3f4fc</color>
+
+    <!-- report item layout -->
+    <color name="report_item_text">#383e4a</color>
+    <color name="report_item_state_text">#0082cc</color>
+    <color name="report_item_back">#f7f7f7</color>
+
+    <color name="TransparentGrey">#7F000000</color>
+
+    <color name="photo_back">#ddd</color>
+
+    <!-- main report layout -->
+    <color name="main_title_bar_back">#55b6ed</color>
+
+    <!-- report detail activity -->
+    <color name="detail_cell_grey_back">#dddddd</color>
+    <color name="detail_cell_white_back">@android:color/white</color>
+    <color name="detail_cell_border">#FF909090</color>
+
+</resources>

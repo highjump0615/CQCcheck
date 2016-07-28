@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_menu"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/layout_navbar"
+    android:background="@drawable/nav_menu_back"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/but_menu_report"
+        style="@style/NavMenuButtonStyle"
+        android:text="@string/menu_report"/>
+
+    <include layout="@layout/layout_nav_menu_seperator" />
+
+    <Button
+        android:id="@+id/but_menu_task"
+        style="@style/NavMenuButtonStyle"
+        android:text="@string/menu_task"/>
+
+    <include layout="@layout/layout_nav_menu_seperator" />
+
+    <Button
+        android:id="@+id/but_menu_location"
+        style="@style/NavMenuButtonStyle"
+        android:text="@string/menu_location"
+        android:visibility="gone"/>
+
+    <include layout="@layout/layout_nav_menu_seperator"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/but_menu_operation"
+        style="@style/NavMenuButtonStyle"
+        android:text="@string/menu_operation"/>
+
+    <include layout="@layout/layout_nav_menu_seperator" />
+
+    <Button
+        android:id="@+id/but_menu_seturl"
+        style="@style/NavMenuButtonStyle"
+        android:text="@string/menu_setparam"/>
+
+</LinearLayout>

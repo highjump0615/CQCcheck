@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/detail_cell_grey_back">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="79"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="Pcs / carton" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="205"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="外部尺寸\nExternal Dimension (cm)\nL x W x H" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="236"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="@dimen/detail_cell_padding_small"
+            android:paddingBottom="@dimen/detail_cell_padding_small"
+            android:text="纸箱 Carton" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="127"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="@dimen/detail_cell_padding_small"
+                android:paddingBottom="@dimen/detail_cell_padding_small"
+                android:text="厚度\nThickness (mm)" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="109"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="@dimen/detail_cell_padding_small"
+                android:paddingBottom="@dimen/detail_cell_padding_small"
+                android:text="层数\nNo of layers" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="155"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="密封方式\nType of sealing" />
+
+</LinearLayout>

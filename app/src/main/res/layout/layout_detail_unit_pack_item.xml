@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_color">
+
+    <TextView
+        android:id="@+id/text_pack_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="90"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/text_dimen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="126"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/text_thickness"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="131"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding_small"
+        android:paddingBottom="@dimen/detail_cell_padding_small"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/text_layers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="108"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding_small"
+        android:paddingBottom="@dimen/detail_cell_padding_small"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/text_print_color"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="118"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/text_sealing_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="102"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="" />
+
+</LinearLayout>

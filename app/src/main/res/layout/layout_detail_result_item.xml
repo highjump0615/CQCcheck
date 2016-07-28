@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="185"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="结论" />
+
+    <EditText
+        android:id="@+id/edit_sampling_result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="490"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:textColor="@drawable/edit_text_color"
+        android:text="合格"
+        android:textSize="@dimen/detail_edit_text_size" />
+
+</LinearLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="@dimen/detail_cell_min_height"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/detail_key_cell_width"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="@dimen/detail_cell_padding"
+                android:background="@color/detail_cell_grey_back"
+                android:text="审批日期\nApproval Date" />
+
+            <EditText
+                android:id="@+id/edit_approval_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/detail_cell_margin"
+                android:layout_marginRight="@dimen/detail_cell_margin"
+                android:padding="@dimen/detail_edit_padding"
+                android:textColor="@drawable/edit_text_color"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp"
+                android:text=""/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/detail_key_cell_width"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="@dimen/detail_cell_padding"
+                android:background="@color/detail_cell_grey_back"
+                android:text="审批人\nApproval By" />
+
+            <EditText
+                android:id="@+id/edit_approval_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/detail_cell_margin"
+                android:layout_marginRight="@dimen/detail_cell_margin"
+                android:padding="@dimen/detail_edit_padding"
+                android:textColor="@drawable/edit_text_color"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp"
+                android:text=""/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_cell_min_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/detail_key_cell_width"
+            android:layout_height="match_parent"
+            android:padding="@dimen/detail_cell_padding"
+            android:background="@color/detail_cell_grey_back"
+            android:text="审核结论\nConclusion" />
+
+        <CheckBox
+            android:id="@+id/chk_result_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/detail_cell_margin"
+            android:text="PASS"/>
+
+        <CheckBox
+            android:id="@+id/chk_result_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/detail_cell_margin"
+            android:text="FAIL"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="@dimen/detail_cell_min_height3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/detail_key_cell_width"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/detail_cell_padding"
+            android:background="@color/detail_cell_grey_back"
+            android:text="核查时间/地点\nVerification\nDate / Place" />
+
+        <TextView
+            android:id="@+id/text_report_date_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/detail_cell_padding"
+            android:text="2014年11月4日/安微省合肥市高新技术开发区合欢路34\nNov.4.2014/No.34 Hehuan Road High-Tech Development Zone, Hefei China" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="@dimen/detail_cell_min_height3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/detail_key_cell_width"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/detail_cell_padding"
+            android:background="@color/detail_cell_grey_back"
+            android:text="客户确认/时间\nConfirm by client / date" />
+
+        <ImageView
+            android:id="@+id/imgview_client"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:minWidth="@dimen/confirm_sign_min_width"
+            android:minHeight="@dimen/confirm_sign_min_height"
+            android:background="@android:color/background_light"/>
+
+        <TextView
+            android:id="@+id/text_client"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/detail_cell_margin"
+            android:layout_marginRight="@dimen/detail_cell_margin"
+            android:padding="@dimen/detail_edit_padding"
+            android:layout_gravity="center_vertical"
+            android:textSize="14sp"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="@dimen/detail_cell_min_height3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/detail_key_cell_width"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/detail_cell_padding"
+            android:background="@color/detail_cell_grey_back"
+            android:text="审核人(签字)/日期\nInspector/Date" />
+
+        <ImageView
+            android:id="@+id/imgview_inspector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:minWidth="@dimen/confirm_sign_min_width"
+            android:minHeight="@dimen/confirm_sign_min_height"
+            android:background="@android:color/background_light"/>
+
+        <TextView
+            android:id="@+id/text_inspector_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/detail_cell_padding"
+            android:text="2014年11月4日" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_horizontal_line" />
+
+</LinearLayout>

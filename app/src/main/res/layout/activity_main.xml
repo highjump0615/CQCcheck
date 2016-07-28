@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_navbar"
+        android:layout_above="@+id/layout_bottombar"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_title_bar_height"
+            android:background="@color/main_title_bar_back"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="11"
+                android:gravity="center"
+                android:textSize="@dimen/main_title_bar_font_size"
+                android:textColor="@android:color/white"
+                android:text="序号"
+                android:shadowColor="@color/TransparentGrey"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="0.01"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="19"
+                android:gravity="center"
+                android:textSize="@dimen/main_title_bar_font_size"
+                android:textColor="@android:color/white"
+                android:text="报告编号"
+                android:shadowColor="@color/TransparentGrey"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="0.01"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:textSize="@dimen/main_title_bar_font_size"
+                android:textColor="@android:color/white"
+                android:text="检查报告"
+                android:shadowColor="@color/TransparentGrey"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="0.01"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="17"
+                android:gravity="center"
+                android:textSize="@dimen/main_title_bar_font_size"
+                android:textColor="@android:color/white"
+                android:text="检查情况"
+                android:shadowColor="@color/TransparentGrey"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="0.01"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list_report"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_navbar" />
+
+    <include layout="@layout/layout_menu"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_bottombar"
+        style="@style/BottomBarStyle" >
+
+        <TextView
+            android:id="@+id/text_today"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2014年10月25日"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/bottom_bar_text_size"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/text_unit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/text_today"
+            android:layout_toLeftOf="@+id/text_username"
+            android:text="中国质量认证中心上海分中心"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/bottom_bar_text_size"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/text_username"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="陆文杰"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/bottom_bar_text_size"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

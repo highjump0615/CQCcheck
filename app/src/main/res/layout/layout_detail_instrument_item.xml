@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item_color">
+
+    <TextView
+        android:id="@+id/text_instrument"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="187"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="耐压测试仪" />
+
+    <TextView
+        android:id="@+id/text_model"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="125"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="LA2670A" />
+
+    <TextView
+        android:id="@+id/text_ref_no"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="112"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="2706055" />
+
+    <TextView
+        android:id="@+id/text_validity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="280"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="2014/07/09" />
+
+</LinearLayout>

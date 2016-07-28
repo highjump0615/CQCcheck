@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dialog_padding_horizontal"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/but_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dialog_item_margin"
+        android:layout_weight="1"
+        android:text="取消"/>
+
+    <Button
+        android:id="@+id/but_delete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dialog_item_margin"
+        android:layout_weight="1"
+        android:text="删除"/>
+
+    <Button
+        android:id="@+id/but_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dialog_item_margin"
+        android:layout_weight="1"
+        android:text="保存"/>
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusableInTouchMode="true"
+        android:focusable="true" />
+
+    <Button
+        android:id="@+id/but_seturl"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="@dimen/login_seturl_padding"
+        android:paddingRight="@dimen/login_seturl_padding"
+        android:text="@string/menu_setparam"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:background="@null" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="50dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="42sp"
+            android:textColor="@android:color/white"
+            android:text="现场核查数据采集系统"
+            android:layout_marginTop="10dp"
+            android:shadowColor="@color/TransparentGrey"
+            android:shadowDx="1"
+            android:shadowDy="2"
+            android:shadowRadius="0.01"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/login_text_back"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:padding="18dp"
+                    android:src="@drawable/login_username"/>
+                
+                <EditText
+                    android:id="@+id/edit_username"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="用户名"
+                    android:background="@null"
+                    android:inputType="textPersonName|textNoSuggestions"/>
+                
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/login_separator" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:padding="18dp"
+                    android:src="@drawable/login_password"/>
+
+                <EditText
+                    android:id="@+id/edit_password"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="口 令"
+                    android:background="@null"
+                    android:inputType="textPassword"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/but_login"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:text="登 录"
+            android:textSize="22sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/but_login_bg" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:text="版权所有 CQC中国质量认证中心"
+        android:shadowColor="@color/TransparentGrey"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="0.01"/>
+
+</RelativeLayout>

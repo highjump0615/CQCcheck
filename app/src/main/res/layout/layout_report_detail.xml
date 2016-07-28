@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_report"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/layout_bottombar"
+    android:layout_below="@+id/layout_navbar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_detail_header" />
+
+        <!-- 1. 申请信息 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/detail_title_margin_bottom"
+            android:layout_marginLeft="@dimen/detail_title_margin"
+            android:layout_marginRight="@dimen/detail_title_margin"
+            android:layout_marginTop="@dimen/detail_title_margin_top"
+            android:text="一. 申请信息 Application Information" />
+
+        <include layout="@layout/layout_detail_app_info" />
+
+        <!-- 2. 产品信息 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/detail_title_margin_bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/detail_title_margin"
+                android:paddingBottom="@dimen/detail_title_margin_bottom"
+                android:text="二. 产品信息 Product Information" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="新增"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/layout_horizontal_line" />
+
+        <include layout="@layout/layout_detail_prod_info_header" />
+
+        <LinearLayout
+            android:id="@+id/layout_prod_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <include layout="@layout/layout_horizontal_line" />
+
+        <!-- 3. 产品核查情况 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/detail_title_margin_top"
+            android:padding="@dimen/detail_title_margin_bottom">
+
+            <TextView
+                android:id="@+id/text_title_prod_veri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/detail_title_margin"
+                android:text="三. 产品核查情况 Product Verification" />
+
+            <!-- Part I 电气参数	Electrical Specification -->
+
+            <TextView
+                android:id="@+id/text_title_electric_spec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/detail_title_margin"
+                android:paddingBottom="@dimen/detail_title_margin_bottom"
+                android:text="Part I 电气参数	Electrical Specification" />
+
+            <Button
+                android:id="@+id/but_add_electric_spec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="新增" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/layout_horizontal_line" />
+
+        <include layout="@layout/layout_detail_electric_spec_header" />
+        <LinearLayout
+            android:id="@+id/layout_electric_spec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+        <include layout="@layout/layout_horizontal_line" />
+
+        <!-- Part II 测试数值 Technical data measured -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/detail_title_margin_bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/detail_title_margin"
+                android:paddingBottom="@dimen/detail_title_margin_bottom"
+                android:text="Part II 测试数值 Technical data measured" />
+
+            <Button
+                android:id="@+id/but_add_tech_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="新增" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/layout_horizontal_line" />
+
+        <include layout="@layout/layout_detail_tech_data_header" />
+        <LinearLayout
+            android:id="@+id/layout_data_measured"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+        <include layout="@layout/layout_horizontal_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/detail_title_margin_bottom">
+
+            <Button
+                android:id="@+id/but_add_instrument"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="新增" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/layout_horizontal_line" />
+
+        <include layout="@layout/layout_detail_instrument_header" />
+        <LinearLayout
+            android:id="@+id/layout_instrument"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+        <include layout="@layout/layout_horizontal_line" />
+
+        <!-- Part III 关键零部件一致性 List of electrical components -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/detail_title_margin_bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/detail_title_margin"
+                android:paddingBottom="@dimen/detail_title_margin_bottom"
+                android:text="Part III 关键零部件一致性 List of electrical components" />
+
+            <Button
+                android:id="@+id/but_add_electric_comp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="新增" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/layout_horizontal_line" />
+
+        <include layout="@layout/layout_detail_electric_comp_header" />
+        <LinearLayout
+            android:id="@+id/layout_electric_comp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+        <include layout="@layout/layout_horizontal_line" />
+
+        <!-- Part IV 包装 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/detail_title_margin_top"
+            android:padding="@dimen/detail_title_margin_bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/detail_title_margin"
+                android:text="Part IV 包装" />
+
+            <!-- 运输包装 Export Carton -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/detail_title_margin"
+                android:paddingBottom="@dimen/detail_title_margin_bottom"
+                android:text="运输包装 Export Carton" />
+
+            <Button
+                android:id="@+id/but_add_export_carton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="新增" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/layout_horizontal_line" />
+
+        <include layout="@layout/layout_detail_export_carton_header" />
+        <LinearLayout
+            android:id="@+id/layout_export_carton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+        <include layout="@layout/layout_horizontal_line" />
+
+        <!-- 销售包装 Unit Packaging -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/detail_title_margin_bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/detail_title_margin"
+                android:paddingBottom="@dimen/detail_title_margin_bottom"
+                android:text="销售包装 Unit Packaging" />
+
+            <Button
+                android:id="@+id/but_add_unit_pack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="新增" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/layout_horizontal_line" />
+
+        <include layout="@layout/layout_detail_unit_pack_header" />
+        <LinearLayout
+            android:id="@+id/layout_unit_pack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+        <include layout="@layout/layout_horizontal_line" />
+
+        <!-- Part V  配件描述 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/detail_title_margin_bottom"
+            android:layout_marginLeft="@dimen/detail_title_margin"
+            android:layout_marginRight="@dimen/detail_title_margin"
+            android:layout_marginTop="@dimen/detail_title_margin_top"
+            android:text="Part V  配件描述 Description of accessories included" />
+
+        <include layout="@layout/layout_horizontal_line" />
+
+        <EditText
+            android:id="@+id/edit_accessories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/detail_cell_margin"
+            android:layout_marginRight="@dimen/detail_cell_margin"
+            android:textColor="@drawable/edit_text_color"
+            android:padding="@dimen/detail_edit_padding"
+            android:text=""
+            android:textSize="@dimen/detail_edit_text_size" />
+
+        <include layout="@layout/layout_horizontal_line" />
+
+        <!-- Part VI  其他信息 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/detail_title_margin_bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/detail_title_margin"
+                android:paddingBottom="@dimen/detail_title_margin_bottom"
+                android:text="Part VI  其他信息 Other information" />
+
+            <Button
+                android:id="@+id/but_add_other_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="新增" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/layout_horizontal_line" />
+
+        <include layout="@layout/layout_detail_other_info_header" />
+        <LinearLayout
+            android:id="@+id/layout_other_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+        <include layout="@layout/layout_horizontal_line" />
+
+        <!-- 四. 抽样及结论 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/detail_title_margin_bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/detail_title_margin"
+                android:paddingBottom="@dimen/detail_title_margin_bottom"
+                android:text="四. 抽样及结论 Sampling and conclusions" />
+
+            <Button
+                android:id="@+id/but_add_sampling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="新增" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/layout_horizontal_line" />
+
+        <include layout="@layout/layout_detail_sampling_header" />
+        <LinearLayout
+            android:id="@+id/layout_sampling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <include layout="@layout/layout_detail_result_item" />
+
+        <include layout="@layout/layout_horizontal_line" />
+
+        <!-- 五、 核查相片 Verification Photos -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/detail_title_margin_top"
+            android:padding="@dimen/detail_title_margin_bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/detail_title_margin"
+                android:text="五. 核查相片 Verification Photos" />
+
+            <!-- I  产品包装照片 Product Packaging photos -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/detail_title_margin"
+                android:paddingBottom="@dimen/detail_title_margin_bottom"
+                android:text="I  产品包装照片 Product Packaging photos" />
+
+            <Button
+                android:id="@+id/but_add_photo_pack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="新增" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_pic_pack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+        <include layout="@layout/layout_horizontal_line" />
+
+        <!-- II  产品照片 Product photos -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/detail_title_margin_bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/detail_title_margin"
+                android:paddingBottom="@dimen/detail_title_margin_bottom"
+                android:text="II  产品照片 Product photos" />
+
+            <Button
+                android:id="@+id/but_add_photo_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="新增" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_pic_prod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+        <include layout="@layout/layout_horizontal_line" />
+
+        <!-- III  产品结构型照片 Product Structure Photos -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/detail_title_margin_bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/detail_title_margin"
+                android:paddingBottom="@dimen/detail_title_margin_bottom"
+                android:text="III  产品结构型照片 Product Structure Photos" />
+
+            <Button
+                android:id="@+id/but_add_photo_structure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="新增" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_pic_struct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+        <include layout="@layout/layout_horizontal_line" />
+
+        <!-- IV  铭牌/标识 Marking -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/detail_title_margin_bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/detail_title_margin"
+                android:paddingBottom="@dimen/detail_title_margin_bottom"
+                android:text="IV  铭牌/标识 Marking" />
+
+            <Button
+                android:id="@+id/but_add_photo_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="新增" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_pic_mark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+        <include layout="@layout/layout_horizontal_line" />
+
+        <!-- V  缺陷照片 Defect Photos -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/detail_title_margin_bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/detail_title_margin"
+                android:paddingBottom="@dimen/detail_title_margin_bottom"
+                android:text="V  缺陷照片 Defect Photos" />
+
+            <Button
+                android:id="@+id/but_add_photo_defect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="新增" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_pic_defect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+        <include layout="@layout/layout_horizontal_line" />
+
+        <!-- 六. 目证试验 Witness Test -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/detail_title_margin_bottom"
+            android:layout_marginLeft="@dimen/detail_title_margin"
+            android:layout_marginRight="@dimen/detail_title_margin"
+            android:layout_marginTop="@dimen/detail_title_margin_top"
+            android:text="六. 目证试验 Witness Test" />
+
+        <EditText
+            android:id="@+id/edit_witness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/detail_cell_margin"
+            android:layout_marginRight="@dimen/detail_cell_margin"
+            android:padding="@dimen/detail_edit_padding"
+            android:textColor="@drawable/edit_text_color"
+            android:text=""
+            android:textSize="@dimen/detail_edit_text_size" />
+
+        <include layout="@layout/layout_horizontal_line" />
+
+        <!-- 七. 附加说明（必要时）Additional Information (necessary) -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/detail_title_margin_bottom"
+            android:layout_marginLeft="@dimen/detail_title_margin"
+            android:layout_marginRight="@dimen/detail_title_margin"
+            android:layout_marginTop="@dimen/detail_title_margin_top"
+            android:text="七. 附加说明（必要时）Additional Information (necessary) " />
+
+        <EditText
+            android:id="@+id/edit_additional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/detail_cell_margin"
+            android:layout_marginRight="@dimen/detail_cell_margin"
+            android:padding="@dimen/detail_edit_padding"
+            android:textColor="@drawable/edit_text_color"
+            android:text=""
+            android:textSize="@dimen/detail_edit_text_size" />
+
+    </LinearLayout>
+
+</ScrollView>

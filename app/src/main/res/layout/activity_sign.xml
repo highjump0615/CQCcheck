@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_above="@+id/imgview_sign"
+        android:text="客户签名"
+        android:gravity="center"
+        android:textSize="35sp"/>
+
+    <ImageView
+        android:id="@+id/imgview_sign"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@android:color/white"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/but_delete"
+        android:layout_below="@+id/imgview_sign"
+        android:layout_width="@dimen/sign_button_width"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sign_button_margin"
+        android:text="重写"/>
+
+    <Button
+        android:id="@+id/but_ok"
+        android:layout_below="@+id/imgview_sign"
+        android:layout_width="@dimen/sign_button_width"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sign_button_margin"
+        android:layout_alignParentRight="true"
+        android:text="确定"/>
+
+
+
+</RelativeLayout>

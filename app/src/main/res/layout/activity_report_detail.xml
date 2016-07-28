@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusableInTouchMode="true"
+        android:focusable="true" />
+
+    <include layout="@layout/layout_report_detail" />
+
+    <include layout="@layout/layout_navbar" />
+
+    <include layout="@layout/layout_menu"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_bottombar"
+        style="@style/BottomBarStyle" >
+
+        <TextView
+            android:id="@+id/text_report_status"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="计划核查"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/bottom_bar_text_size"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/but_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/bottom_bar_button_margin_vertical"
+            android:layout_marginBottom="@dimen/bottom_bar_button_margin_vertical"
+            android:layout_marginLeft="@dimen/bottom_bar_button_margin_horizontal"
+            android:layout_marginRight="@dimen/bottom_bar_button_margin_horizontal"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/bottom_bar_button_padding"
+            android:paddingRight="@dimen/bottom_bar_button_padding"
+            android:background="@drawable/but_bottom_bar_bg"
+            android:textColor="@drawable/but_bottom_bar_color"
+            android:textSize="@dimen/bottom_bar_button_text_size"
+            android:drawablePadding="@dimen/bottom_bar_button_drawable_padding"
+            android:drawableStart="@drawable/but_bottom_bar_edit"
+            android:text="编辑核查报告"/>
+
+        <Button
+            android:id="@+id/but_location"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/bottom_bar_button_margin_vertical"
+            android:layout_marginBottom="@dimen/bottom_bar_button_margin_vertical"
+            android:layout_marginLeft="@dimen/bottom_bar_button_margin_horizontal"
+            android:layout_marginRight="@dimen/bottom_bar_button_margin_horizontal"
+            android:layout_toLeftOf="@+id/but_edit"
+            android:paddingLeft="@dimen/bottom_bar_button_padding"
+            android:paddingRight="@dimen/bottom_bar_button_padding"
+            android:background="@drawable/but_bottom_bar_bg"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/bottom_bar_button_text_size"
+            android:text="采集现场位置"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/but_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/bottom_bar_button_margin_vertical"
+            android:layout_marginBottom="@dimen/bottom_bar_button_margin_vertical"
+            android:layout_marginLeft="@dimen/bottom_bar_button_margin_horizontal"
+            android:layout_marginRight="@dimen/bottom_bar_button_margin_horizontal"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/bottom_bar_button_padding"
+            android:paddingRight="@dimen/bottom_bar_button_padding"
+            android:background="@drawable/but_bottom_bar_bg"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/bottom_bar_button_text_size"
+            android:drawablePadding="@dimen/bottom_bar_button_drawable_padding"
+            android:drawableStart="@drawable/bottom_bar_save"
+            android:text="保存核查报告"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/but_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/bottom_bar_button_margin_vertical"
+            android:layout_marginBottom="@dimen/bottom_bar_button_margin_vertical"
+            android:layout_marginLeft="@dimen/bottom_bar_button_margin_horizontal"
+            android:layout_marginRight="@dimen/bottom_bar_button_margin_horizontal"
+            android:layout_toLeftOf="@+id/but_edit"
+            android:paddingLeft="@dimen/bottom_bar_button_padding"
+            android:paddingRight="@dimen/bottom_bar_button_padding"
+            android:background="@drawable/but_bottom_bar_bg"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/bottom_bar_button_text_size"
+            android:text="确认核查报告"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/but_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/bottom_bar_button_margin_vertical"
+            android:layout_marginBottom="@dimen/bottom_bar_button_margin_vertical"
+            android:layout_marginLeft="@dimen/bottom_bar_button_margin_horizontal"
+            android:layout_marginRight="@dimen/bottom_bar_button_margin_horizontal"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/bottom_bar_button_padding"
+            android:paddingRight="@dimen/bottom_bar_button_padding"
+            android:background="@drawable/but_bottom_bar_bg"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/bottom_bar_button_text_size"
+            android:text="上报核查报告"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/but_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/bottom_bar_button_margin_vertical"
+            android:layout_marginBottom="@dimen/bottom_bar_button_margin_vertical"
+            android:layout_marginLeft="@dimen/bottom_bar_button_margin_horizontal"
+            android:layout_marginRight="@dimen/bottom_bar_button_margin_horizontal"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/bottom_bar_button_padding"
+            android:paddingRight="@dimen/bottom_bar_button_padding"
+            android:background="@drawable/but_bottom_bar_bg"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/bottom_bar_button_text_size"
+            android:text="取回核查报告"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

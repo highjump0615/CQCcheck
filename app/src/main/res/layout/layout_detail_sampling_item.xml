@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_color">
+
+    <TextView
+        android:id="@+id/text_product_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="185"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="PORTABLE STEAM SAUNA" />
+
+    <TextView
+        android:id="@+id/text_number_total"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="106"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="1260 PCS" />
+
+    <TextView
+        android:id="@+id/text_number_sampling"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="151"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/text_aql"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="121"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/text_number_accept"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="56"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/text_number_reject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="56"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/detail_cell_padding"
+        android:paddingBottom="@dimen/detail_cell_padding"
+        android:text="" />
+
+</LinearLayout>

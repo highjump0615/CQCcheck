@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text_no"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="51"
+        android:layout_gravity="center"
+        android:padding="@dimen/detail_cell_padding"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="225"
+        android:layout_gravity="center"
+        android:padding="@dimen/detail_cell_padding"
+        android:text="PORTABLE STEAM SAUNA" />
+
+    <TextView
+        android:id="@+id/text_quantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="91"
+        android:layout_gravity="center"
+        android:padding="@dimen/detail_cell_padding"
+        android:text="462 PCS" />
+
+    <TextView
+        android:id="@+id/text_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="171"
+        android:layout_gravity="center"
+        android:padding="@dimen/detail_cell_padding"
+        android:text="JYS-A2" />
+
+    <TextView
+        android:id="@+id/text_pack_manner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="164"
+        android:layout_gravity="center"
+        android:padding="@dimen/detail_cell_padding"
+        android:text="CARTON PACKING" />
+
+</LinearLayout>

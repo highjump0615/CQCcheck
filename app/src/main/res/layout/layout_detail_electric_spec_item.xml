@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/detail_cell_padding"
+    android:paddingBottom="@dimen/detail_cell_padding"
+    android:background="@drawable/list_item_color">
+
+    <TextView
+        android:id="@+id/text_no"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="29"
+        android:layout_gravity="center"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/text_product_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="139"
+        android:layout_gravity="center"
+        android:text="PORTABLE STEAM SAUNA" />
+
+    <TextView
+        android:id="@+id/text_rated_voltage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="78"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/detail_electric_spec_item_padding"
+        android:paddingRight="@dimen/detail_electric_spec_item_padding"
+        android:text="220V" />
+
+    <TextView
+        android:id="@+id/text_rated_power"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="77"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/detail_cell_padding"
+        android:paddingRight="@dimen/detail_cell_padding"
+        android:text="800W" />
+
+    <TextView
+        android:id="@+id/text_rated_freq"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="91"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/detail_electric_spec_item_padding"
+        android:paddingBottom="@dimen/detail_electric_spec_item_padding"
+        android:text="50/60HZ" />
+
+    <TextView
+        android:id="@+id/text_class"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="47"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/detail_electric_spec_item_padding"
+        android:paddingRight="@dimen/detail_electric_spec_item_padding"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/text_ip_grade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="37"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/detail_electric_spec_item_padding"
+        android:paddingRight="@dimen/detail_electric_spec_item_padding"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/text_cable_spec"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="103"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/detail_electric_spec_item_padding"
+        android:paddingRight="@dimen/detail_electric_spec_item_padding"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/text_supply"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="74"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/detail_electric_spec_item_padding"
+        android:paddingRight="@dimen/detail_electric_spec_item_padding"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/text_plug"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="33"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/detail_electric_spec_item_padding"
+        android:paddingRight="@dimen/detail_electric_spec_item_padding"
+        android:text="" />
+
+</LinearLayout>
